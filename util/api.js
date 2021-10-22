@@ -9,6 +9,8 @@ export const myRequest = (options)=>{
 				if(!res.data.success){
 					return uni.showToast({
 						title:"获取数据失败"
+						
+						
 					})
 				}
 				resolve(res)
