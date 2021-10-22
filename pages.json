@@ -1,0 +1,69 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "岭梦空间",
+				 "navigationBarBackgroundColor":"#0091ff",
+				 "navigationBarTextStyle":"white",
+				"enablePullDownRefresh": false
+			}
+		}
+	    ,{
+            "path" : "pages/index/forget",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "找回密码",
+				"navigationBarBackgroundColor":"#0091ff",
+				"navigationBarTextStyle":"white",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/admin/function/function",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "考研自习室后台",
+				"navigationBarBackgroundColor":"#0091ff",
+				"navigationBarTextStyle":"white",
+                "enablePullDownRefresh": false,
+				"app-plus": {
+				    "titleNView": {
+				        "buttons": [ //原生标题栏按钮配置,
+				            {
+				                "text": "⋯", //原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"id":"function"
+							}
+				        ]
+				    }
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/admin/function/function",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/register",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "注册",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#0099ff",
+		"backgroundColor": "#F8F8F8"
+	}
+}
